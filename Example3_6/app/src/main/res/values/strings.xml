@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">예제 3-6</string>
+    <string name="next_image">다음보기</string>
+    <string name="image_filename">cat%1$d.png</string>
+    <string name="cat_description">고양이 이미지 %1$d</string>
+</resources>

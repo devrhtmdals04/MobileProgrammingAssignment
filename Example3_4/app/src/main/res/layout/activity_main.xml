@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="32dp" android:gravity="center_horizontal">
+        <EditText android:id="@+id/nameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/nameInput_hint" android:inputType="textPersonName" />
+        <EditText android:id="@+id/passwordInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/passwordInput_hint" android:inputType="numberPassword" />
+        <EditText android:id="@+id/emailInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/emailInput_hint" android:inputType="textEmailAddress" />
+        <EditText android:id="@+id/birthdayInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/birthdayInput_hint" android:inputType="date" />
+        <EditText android:id="@+id/phoneInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/phoneInput_hint" android:inputType="phone" />
+        <Button android:id="@+id/resultButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_result" />
+        <TextView android:id="@+id/resultText" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#B9D69B" android:padding="8dp" android:text="@string/result_hint" android:textSize="18sp" android:freezesText="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">예제 3-4</string>
+    <string name="show_result">결과보기</string>
+    <string name="result_hint">입력 값 출력 결과</string>
+    <string name="form_result">성명 - %1$s\n비밀번호 - %2$s\n이메일 - %3$s\n생년월일 - %4$s\n연락처 - %5$s</string>
+    <string name="nameInput_hint">성명</string>
+    <string name="passwordInput_hint">비밀번호 0 to 9</string>
+    <string name="emailInput_hint">이메일</string>
+    <string name="birthdayInput_hint">생년월일</string>
+    <string name="phoneInput_hint">연락처</string>
+</resources>

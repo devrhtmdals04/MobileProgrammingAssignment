@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">예제 3-3</string>
+    <string name="sum_button">두 수의 합은?</string>
+    <string name="sum_result">합계: %1$d</string>
+</resources>
