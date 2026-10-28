@@ -69,17 +69,19 @@ class MainActivity : AppCompatActivity() {
             // TODO : 게임 액티비티에서 반환된 결과 처리
             if (result.resultCode == Activity.RESULT_OK) {
                 // TODO : 선택된 이미지의 상태를 가져오기
-                var	resId = IntArray(9)
-                resId = result.data?.getIntArrayExtra("answer")!!
+                val resId = result.data?.getIntArrayExtra("answer")
+                    ?: return@registerForActivityResult
+                if (resId.size != drawableId.size) return@registerForActivityResult
+                ivObj.forEach { it?.setImageDrawable(null) }
                 var	num = 0
                 // 선택된 이미지를 레이아웃에 추가
                 for (i in 0..8) {
                     if (resId[i] >= 1) {
-                        ivObj[num]?.setImageResource(drawableId[i])
+                        ivObj.getOrNull(num)?.setImageResource(drawableId[i])
                         num++
                     }
                 }
-                var	flag = true
+                var flag = resId.count { it == 1 } == 3
                 // 선택된 이미지의 정답 여부를 확인
                 for (i in 0..8) {
                     // 원을 선택한 경우

@@ -68,8 +68,11 @@ class GameActivity : AppCompatActivity() {
         }
 
         var num = 0
+        val selected = BooleanArray(5)
         for (i in 0..4)	{
             checkObj[i]?.setOnClickListener{
+                if (selected[i]) return@setOnClickListener
+                selected[i] = true
                 if	(num	<5)	{
                     num++
                     checkObj[i]?.setImageResource(R.drawable.ok_select)
